@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author claudj
+ *
+ */
+module euler {
+}
