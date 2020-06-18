@@ -1,4 +1,4 @@
-package mariani.problem1_50;
+package it.mariani.problem1_50;
 
 /*
  * The prime factors of 13195 are 5, 7, 13 and 29.

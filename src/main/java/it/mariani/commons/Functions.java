@@ -1,4 +1,4 @@
-package mariani.commons;
+package it.mariani.commons;
 
 public class Functions {
 

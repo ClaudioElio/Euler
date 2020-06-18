@@ -1,4 +1,4 @@
-package mariani.problem1_50;
+package it.mariani.problem1_50;
 
 import java.util.ResourceBundle;
 
@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 public class Problem8 {
 
-	private static ResourceBundle rb = ResourceBundle.getBundle("Problem8");
+	private static ResourceBundle rb = ResourceBundle.getBundle("1_50/Problem8");
 
 	private static final long calc(final int digits) {
 		String number = rb.getString("number");

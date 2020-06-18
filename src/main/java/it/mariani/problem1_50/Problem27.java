@@ -1,10 +1,9 @@
-package mariani.problem1_50;
+package it.mariani.problem1_50;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Map;
+import java.util.Arrays;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /*
  * Euler discovered the remarkable quadratic formula: n^2 + n + 41
@@ -22,27 +21,39 @@ import java.util.Set;
 
 public class Problem27 {
 
-	static final int MAX = 10000;
-	static Set<Integer> primes = new HashSet<Integer>(MAX);
-	
-	static {
-		
-	}
+	static final int MAX = 1000000;
+	static Set<Long> primes;
 
+	static long primesV[] = new long[MAX];
 	static int lastPrime = 0;
 
-	public static boolean isPrime(long value) {
-		for (int cont = 0; cont < lastPrime; cont++) {
-			if (value % primes[cont] == 0) {
-				return false;
-			}
-		}
-		primes[lastPrime] = value;
-		lastPrime++;
-		return true;
+	static {
+		initPrimes();
+		Long[] boxedArr = Arrays.stream(primesV).boxed().toArray(Long[]::new);
+		primes = Stream.of(boxedArr).collect(Collectors.toSet());
 	}
 
-	private static final long calc2(final int limit) {
+	private static void initPrime(long value) {
+		for (int cont = 0; cont < lastPrime; cont++) {
+			if (value % primesV[cont] == 0) {
+				return;
+			}
+		}
+		primesV[lastPrime] = value;
+		lastPrime++;
+	}
+
+	private static boolean isPrime(long value) {
+		return primes.contains(value);
+	}
+
+	private static void initPrimes() {
+		for (int cont = 2; cont < MAX; cont++) {
+			initPrime(cont);
+		}
+	}
+
+	private static final long calc(final int limit) {
 		long sum = 0;
 		for (int cont = 2;  cont < limit; cont++) {
 			if(isPrime(cont)) {
@@ -55,7 +66,7 @@ public class Problem27 {
 	public static final long calc() {
 //		return calc2(10); // answer --> 17
 //		return calc2(1000); // answer --> 76127
-		return calc2(2000000); // answer --> 142913828922
+		return calc(2000000); // answer --> 142913828922
 	}
 
 }

@@ -1,4 +1,4 @@
-package mariani.problem1_50;
+package it.mariani.problem1_50;
 
 /*
  * The sum of the squares of the first ten natural numbers is,

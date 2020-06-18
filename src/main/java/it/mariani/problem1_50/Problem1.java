@@ -1,4 +1,4 @@
-package mariani.problem1_50;
+package it.mariani.problem1_50;
 
 /*
  *
