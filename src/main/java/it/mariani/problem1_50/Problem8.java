@@ -15,7 +15,7 @@ public class Problem8 {
 		String number = rb.getString("number");
 		int len = number.length();
 		long max = 0;
-		for (int contExt = 0;  contExt < len - digits; contExt++) {
+		for (int contExt = 0; contExt < len - digits; contExt++) {
 			long mult = 1;
 			for (int contInt = 0; contInt < digits; contInt++) {
 				mult *= Integer.parseInt(number.substring(contInt + contExt, contInt + contExt + 1));

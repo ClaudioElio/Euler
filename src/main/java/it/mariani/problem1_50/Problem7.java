@@ -6,7 +6,7 @@ public class Problem7 {
 
 	private static final int calc(final int max) {
 		int primePosition = 1;
-		for (int contExt = 3; ; contExt++) {
+		for (int contExt = 3;; contExt++) {
 			if (Functions.isPrime(contExt)) {
 				primePosition++;
 				if (primePosition == max)
@@ -14,7 +14,6 @@ public class Problem7 {
 			}
 		}
 	}
-
 
 	public static final int calc() {
 //		return calc(2); // answer --> 3

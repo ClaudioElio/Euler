@@ -15,11 +15,11 @@ public class Problem5 {
 		}
 		return true;
 	}
-	
+
 	private static final int calc(final int max) {
 		int largest = 1000000000;
 		for (int first = 1; first < largest; first++) {
-			if(allDiv(first, max)) {
+			if (allDiv(first, max)) {
 				return first;
 			}
 		}

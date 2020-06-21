@@ -24,7 +24,7 @@ public class Problem2 {
 		}
 		return sum;
 	}
-	
+
 	public static final int calc() {
 //		return calc(10); // answer --> 10
 //		return calc(40); // answer --> 44

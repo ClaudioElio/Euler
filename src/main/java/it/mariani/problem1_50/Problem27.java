@@ -55,8 +55,8 @@ public class Problem27 {
 
 	private static final long calc(final int limit) {
 		long sum = 0;
-		for (int cont = 2;  cont < limit; cont++) {
-			if(isPrime(cont)) {
+		for (int cont = 2; cont < limit; cont++) {
+			if (isPrime(cont)) {
 				sum += cont;
 			}
 		}
