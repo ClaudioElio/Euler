@@ -16,23 +16,13 @@ public class Functions {
 		return true;
 	}
 
-	private static boolean isPrimeSimple(long value) {
+	public static boolean isPrimeSimple(long value) {
 		for (long cont = 2; cont < value; cont++) {
 			if (value % cont == 0) {
 				return false;
 			}
 		}
 		return true;
-	}
-
-	public static long numFactors(long value) {
-		long num = 0;
-		for (long cont = 1; cont <= value / 2; cont++) {
-			if (value % cont == 0) {
-				num++;
-			}
-		}
-		return num + 1;
 	}
 
 	public static boolean isPrime(long value) {
