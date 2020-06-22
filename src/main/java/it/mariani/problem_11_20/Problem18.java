@@ -34,7 +34,7 @@ Find the maximum total from top to bottom of the triangle below:
 
 public class Problem18 {
 
-	private static final int SIZE = 2; //15;
+	private static final int SIZE = 15;
 
 	private static final int[][] numbers = new int[SIZE][SIZE];
 
@@ -56,15 +56,14 @@ public class Problem18 {
 	}
 
 	public static final void singleCalc(int x, int y, long sum) {
-		for (int contExt = y; contExt < SIZE; contExt++) {
-			for (int contInt = x; contInt < SIZE; contInt++) {
-				if (numbers[contExt][contInt] == 0)
-					break;
-				singleCalc(contExt + 1, contInt + 1, sum);
-				sum += numbers[contExt][contInt];
-			}
+		if (y == SIZE - 1) {
+//			System.out.println("x:" + x + " y:" + y + " s:" + sum + " n:" + numbers[x][y]);
+			maxSum = Long.max(maxSum, sum + numbers[y][x]);
+		} else {
+//			System.out.println("x:" + x + " y:" + y + " n:" + numbers[x][y]);
+			singleCalc(x, y + 1, sum + numbers[y][x]);
+			singleCalc(x + 1, y + 1, sum + numbers[y][x]);
 		}
-		maxSum = Long.max(maxSum, sum);
 	}
 
 	public static final long calc() {
