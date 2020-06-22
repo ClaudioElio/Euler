@@ -7,7 +7,7 @@ package it.mariani.problem_01_10;
  * There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product a*b*c.
  */
 
-public class Problem9 {
+public class Problem09 {
 
 	private static final long calc(final int limit) {
 		int limitSqr = limit * limit;

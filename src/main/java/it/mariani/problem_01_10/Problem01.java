@@ -7,7 +7,7 @@ package it.mariani.problem_01_10;
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
 
-public class Problem1 {
+public class Problem01 {
 
 	private static final int calc(final int max) {
 		int sum = 0;

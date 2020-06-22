@@ -1,6 +1,5 @@
 package it.mariani.problem_11_20;
 
-import java.math.BigInteger;
 import java.util.ResourceBundle;
 
 /*

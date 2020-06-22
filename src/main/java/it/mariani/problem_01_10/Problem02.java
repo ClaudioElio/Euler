@@ -7,7 +7,7 @@ package it.mariani.problem_01_10;
  * By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
  */
 
-public class Problem2 {
+public class Problem02 {
 
 	private static final int calc(final int max) {
 		int sum = 2;

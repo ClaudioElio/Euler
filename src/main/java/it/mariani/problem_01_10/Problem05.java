@@ -5,7 +5,7 @@ package it.mariani.problem_01_10;
  * What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
  */
 
-public class Problem5 {
+public class Problem05 {
 
 	private static final boolean allDiv(final int num, final int max) {
 		for (int cont = 1; cont <= max; cont++) {

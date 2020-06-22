@@ -2,7 +2,7 @@ package it.mariani.problem_01_10;
 
 import it.mariani.commons.Functions;
 
-public class Problem7 {
+public class Problem07 {
 
 	private static final int calc(final int max) {
 		int primePosition = 1;

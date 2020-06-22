@@ -5,7 +5,7 @@ package it.mariani.problem_01_10;
  * What is the largest prime factor of the number 600851475143 ?
  */
 
-public class Problem3 {
+public class Problem03 {
 
 	private static final long calc(long min, final long max) {
 		if (min == 1)

@@ -7,9 +7,9 @@ import java.util.ResourceBundle;
  * Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
  */
 
-public class Problem8 {
+public class Problem08 {
 
-	private static ResourceBundle rb = ResourceBundle.getBundle("1_50/Problem8");
+	private static ResourceBundle rb = ResourceBundle.getBundle("1_50/Problem08");
 
 	private static final long calc(final int digits) {
 		String number = rb.getString("number");

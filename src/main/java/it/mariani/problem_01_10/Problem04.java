@@ -6,7 +6,7 @@ package it.mariani.problem_01_10;
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
-public class Problem4 {
+public class Problem04 {
 
 	private static final int calc(final int max) {
 		int largest = 0;
