@@ -35,6 +35,16 @@ public class Functions {
 		return num + 1;
 	}
 
+	public static long sumFactors(long value) {
+		long sum = 0;
+		for (long cont = 1; cont < value; cont++) {
+			if (value % cont == 0) {
+				sum += cont;
+			}
+		}
+		return sum;
+	}
+
 	public static boolean isPrime(long value) {
 		return isPrimeSimple(value);
 	}
