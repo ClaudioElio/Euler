@@ -1,4 +1,4 @@
-package it.mariani.problem1_50;
+package it.mariani.problem_01_10;
 
 /*
  * 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
@@ -15,11 +15,11 @@ public class Problem5 {
 		}
 		return true;
 	}
-
+	
 	private static final int calc(final int max) {
 		int largest = 1000000000;
 		for (int first = 1; first < largest; first++) {
-			if (allDiv(first, max)) {
+			if(allDiv(first, max)) {
 				return first;
 			}
 		}

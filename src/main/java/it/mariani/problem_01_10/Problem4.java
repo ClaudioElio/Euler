@@ -1,4 +1,4 @@
-package it.mariani.problem1_50;
+package it.mariani.problem_01_10;
 
 /*
  * A palindromic number reads the same both ways.

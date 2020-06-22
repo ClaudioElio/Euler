@@ -1,4 +1,5 @@
-package it.mariani.problem1_50;
+package it.mariani.problem_01_10;
+
 
 /*
  * A Pythagorean triplet is a set of three natural numbers, a < b < c, for which, a^2 + b^2 = c^2
@@ -10,14 +11,14 @@ public class Problem9 {
 
 	private static final long calc(final int limit) {
 		int limitSqr = limit * limit;
-		for (int contA = 1; contA < limit; contA++) {
-			for (int contB = 1; contB < limit; contB++) {
+		for (int contA = 1;  contA < limit; contA++) {
+			for (int contB = 1;  contB < limit; contB++) {
 				if (contA + contB < limit) {
-					int first = (2 * limit) * (contA + contB) - 2 * contA * contB;
+					int first = (2 * limit)*(contA + contB) - 2 * contA * contB;
 					if (first == limitSqr) {
 						return contA * contB * (limit - contA - contB);
 					}
-
+					
 				}
 			}
 		}

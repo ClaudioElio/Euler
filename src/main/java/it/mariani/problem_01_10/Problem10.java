@@ -1,4 +1,4 @@
-package it.mariani.problem1_50;
+package it.mariani.problem_01_10;
 
 import it.mariani.commons.Functions;
 
@@ -9,10 +9,11 @@ import it.mariani.commons.Functions;
 
 public class Problem10 {
 
+
 	private static final long calc(final int limit) {
 		long sum = 0;
-		for (int cont = 2; cont < limit; cont++) {
-			if (Functions.isPrimeVec(cont)) {
+		for (int cont = 2;  cont < limit; cont++) {
+			if(Functions.isPrimeVec(cont)) {
 				sum += cont;
 			}
 		}
