@@ -19,10 +19,29 @@ class pos {
 
 public class Problem15 {
 
-	private static final int MAX = 5;
+	private static final int MAX = 20;
 	private static long numRoutes = 0;
 
 	private static pos[] path = new pos[MAX * 2];
+
+	private static long[][] paths = new long[MAX + 1][MAX + 1];
+
+	public static final void singleCalc2(pos p) {
+		if (p.x == MAX || p.y == MAX) {
+			paths[p.y][p.x] = 1;
+			return;
+		}
+		if (paths[p.y][p.x] == 0) {
+			if (p.x < MAX) {
+				singleCalc2(new pos(p.x + 1, p.y));
+				paths[p.y][p.x] += paths[p.y][p.x + 1];
+			}
+			if (p.y < MAX) {
+				singleCalc2(new pos(p.x, p.y + 1));
+				paths[p.y][p.x] += paths[p.y + 1][p.x];
+			}
+		}
+	}
 
 	public static final void singleCalc(pos p) {
 		if (p.x < MAX) {
@@ -43,7 +62,12 @@ public class Problem15 {
 	}
 
 	public static final long calc() {
-		singleCalc(new pos(0, 0));
+//		singleCalc(new pos(0, 0));
+		singleCalc2(new pos(0, 0));
+//		long l = singleCalc2(new pos(0, 0));
+//		System.out.println(" r: " + numRoutes);
+//		System.out.println(" l: " + paths[0][0]);
+
 		return numRoutes;
 	}
 

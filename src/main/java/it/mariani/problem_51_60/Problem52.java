@@ -1,4 +1,4 @@
-package it.mariani.problem_51_100;
+package it.mariani.problem_51_60;
 
 import java.util.Arrays;
 

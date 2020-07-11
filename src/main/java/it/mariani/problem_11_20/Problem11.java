@@ -29,9 +29,9 @@ public class Problem11 {
 	private static final long singleCalc(int contExt, int contInt, int hor, int ver) {
 		long value = matrix[contExt][contInt] * matrix[contExt + hor][contInt + ver]
 				* matrix[contExt + 2 * hor][contInt + 2 * ver] * matrix[contExt + 3 * hor][contInt + 3 * ver];
-		System.out.println("ext:" + contExt + ", int:" + contInt + " A: " + matrix[contExt][contInt] + " B: "
-				+ matrix[contExt + hor][contInt + ver] + " C: " + matrix[contExt + 2 * hor][contInt + 2 * ver] + " D: "
-				+ matrix[contExt + 3 * hor][contInt + 3 * ver] + "-> " + value);
+//		System.out.println("ext:" + contExt + ", int:" + contInt + " A: " + matrix[contExt][contInt] + " B: "
+//				+ matrix[contExt + hor][contInt + ver] + " C: " + matrix[contExt + 2 * hor][contInt + 2 * ver] + " D: "
+//				+ matrix[contExt + 3 * hor][contInt + 3 * ver] + "-> " + value);
 		return value;
 	}
 
@@ -50,7 +50,7 @@ public class Problem11 {
 
 	public static final long calc() {
 		load();
-		System.out.println(matrix[0]);
+//		System.out.println(matrix[0]);
 		return calc(20); // answer --> 70600674
 	}
 

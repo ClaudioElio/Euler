@@ -6,4 +6,6 @@
  *
  */
 module euler {
+	requires static lombok;
+	requires static org.slf4j;
 }

@@ -24,12 +24,12 @@ public class Problem21 {
 		
 		for (int cont = 0; cont < MAX; cont++) {
 			long sum = Functions.sumFactors(cont);
-			System.out.println("c:" + cont + " s:" + sum);
+//			System.out.println("c:" + cont + " s:" + sum);
 			if ((sum < 10000) && (sum != cont)) {
 				long friend = Functions.sumFactors(sum);
-				System.out.println("f:" + friend);
+//				System.out.println("f:" + friend);
 				if (friend == cont) {
-					System.out.println("WOW:" + friend);
+//					System.out.println("WOW:" + friend);
 					totalSum += cont;
 				}
 			}

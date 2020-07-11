@@ -48,9 +48,9 @@ public class Problem18 {
 			String[] values = row.split(",");
 			for (int contInt = 0; contInt < values.length; contInt++) {
 				numbers[contExt][contInt] = Integer.parseInt(values[contInt]);
-				System.out.print(" " + numbers[contExt][contInt]);
+//				System.out.print(" " + numbers[contExt][contInt]);
 			}
-			System.out.println();
+//			System.out.println();
 		}
 
 	}

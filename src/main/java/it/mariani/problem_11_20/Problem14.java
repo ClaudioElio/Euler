@@ -45,7 +45,7 @@ public class Problem14 {
 				max = num;
 				value = cont;
 			}
-			System.out.println(max);
+//			System.out.println(max);
 		}
 		return value;
 

@@ -25,14 +25,28 @@ public class Functions {
 		return true;
 	}
 
+	public static long quickFactors(long value) {
+		long num = 0;
+		for (long cont = 1; cont <= Math.sqrt(value); cont++) {
+			if (value % cont == 0) {
+				if (value / cont == cont) {
+					num++;
+				} else {
+					num += 2;
+				}
+			}
+		}
+		return num;
+	}
+
 	public static long numFactors(long value) {
 		long num = 0;
-		for (long cont = 1; cont <= value / 2; cont++) {
+		for (long cont = 1; cont <= value; cont++) {
 			if (value % cont == 0) {
 				num++;
 			}
 		}
-		return num + 1;
+		return num;
 	}
 
 	public static long sumFactors(long value) {
@@ -47,6 +61,13 @@ public class Functions {
 
 	public static boolean isPrime(long value) {
 		return isPrimeSimple(value);
+	}
+
+	public long factorial(int value) {
+		if (value <= 2) {
+			return value;
+		}
+		return value * factorial(value - 1);
 	}
 
 }

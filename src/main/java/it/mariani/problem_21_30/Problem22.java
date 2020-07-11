@@ -34,9 +34,9 @@ public class Problem22 {
 			for (int contInt = 0; contInt < name.length(); contInt++) {
 				int value = name.charAt(contInt) - 64;
 				sum += value;
-				System.out.println("name: " + name + " value: " + value);
+//				System.out.println("name: " + name + " value: " + value);
 			}
-			System.out.println("name: " + name + " sum: " + sum);
+//			System.out.println("name: " + name + " sum: " + sum);
 			sum = sum * (contExt + 1);
 			globalSum += sum;
 		}

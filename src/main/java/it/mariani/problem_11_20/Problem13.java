@@ -121,9 +121,9 @@ public class Problem13 {
 			for (int contInt = 0; contInt < 5; contInt++) {
 				String number = rb.getString("number" + contExt).substring(contInt * 10, (contInt + 1) * 10);
 				numbers[contExt][contInt] = new BigInteger(number);
-				System.out.print(numbers[contExt][contInt]);
+//				System.out.print(numbers[contExt][contInt]);
 			}
-			System.out.println();
+//			System.out.println();
 		}
 
 	}
@@ -141,7 +141,7 @@ public class Problem13 {
 		BigInteger sum = singleCalc(0);
 		BigInteger toAdd = new BigInteger(singleCalc(1).toString().substring(0, 2));
 		sum = sum.add(toAdd);
-		System.out.println(" s: " + sum);
+//		System.out.println(" s: " + sum);
 		return new BigInteger(sum.toString().substring(0, 10)).longValue();
 	}
 

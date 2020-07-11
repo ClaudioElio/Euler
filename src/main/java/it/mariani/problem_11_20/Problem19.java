@@ -37,7 +37,7 @@ public class Problem19 {
 				sundays++;
 			}
 		}
-		System.out.println(ld);
+//		System.out.println(ld);
 		return sundays;
 	}
 
